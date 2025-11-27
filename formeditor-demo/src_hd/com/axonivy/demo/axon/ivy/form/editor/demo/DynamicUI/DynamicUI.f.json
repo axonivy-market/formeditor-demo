@@ -1,0 +1,133 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/form/13.1.0/form.json",
+  "id" : "0c8f12b0-9d52-437b-952e-50fd9c8ea57d",
+  "components" : [ {
+    "cid" : "panel1",
+    "type" : "Panel",
+    "config" : {
+      "components" : [ {
+        "cid" : "layout2",
+        "type" : "Layout",
+        "config" : {
+          "components" : [ {
+            "cid" : "input5",
+            "type" : "Input",
+            "config" : {
+              "label" : "First Name"
+            }
+          }, {
+            "cid" : "input4",
+            "type" : "Input",
+            "config" : {
+              "label" : "First Name"
+            }
+          }, {
+            "cid" : "input6",
+            "type" : "Input",
+            "config" : {
+              "label" : "Email"
+            }
+          }, {
+            "cid" : "datepicker7",
+            "type" : "DatePicker",
+            "config" : {
+              "label" : "Date of Birth"
+            }
+          } ]
+        }
+      }, {
+        "cid" : "select8",
+        "type" : "Select",
+        "config" : {
+          "updateOnChange" : true,
+          "staticItems" : [ {
+            "label" : "Germany",
+            "value" : "Germany"
+          }, {
+            "label" : "Switzerland",
+            "value" : "Switzerland"
+          }, {
+            "label" : "Austria",
+            "value" : "Austria"
+          }, {
+            "label" : "Vietnam",
+            "value" : "Vietnam"
+          } ],
+          "label" : "Country",
+          "value" : "#{data.country}"
+        }
+      }, {
+        "cid" : "select9",
+        "type" : "Select",
+        "config" : {
+          "visible" : "#{data.country eq 'Germany'}",
+          "staticItems" : [ {
+            "label" : "Baden-Württemberg",
+            "value" : "Baden-Württemberg"
+          }, {
+            "label" : "Bayern",
+            "value" : "Bayern"
+          }, {
+            "label" : "Berlin",
+            "value" : "Berlin"
+          }, {
+            "label" : "Brandenburg",
+            "value" : "Brandenburg"
+          }, {
+            "label" : "Bremen",
+            "value" : "Bremen"
+          }, {
+            "label" : "Hamburg",
+            "value" : "Hamburg"
+          }, {
+            "label" : "Hessen",
+            "value" : "Hessen"
+          }, {
+            "label" : "Mecklenburg-Vorpommern",
+            "value" : "Mecklenburg-Vorpommern"
+          }, {
+            "label" : "Niedersachsen",
+            "value" : "Niedersachsen"
+          }, {
+            "label" : "Nordrhein-Westfalen",
+            "value" : "Nordrhein-Westfalen"
+          }, {
+            "label" : "Rheinland-Pfalz",
+            "value" : "Rheinland-Pfalz"
+          }, {
+            "label" : "SaarlandSachsenSachsen-Anhalt",
+            "value" : "SaarlandSachsenSachsen-Anhalt"
+          }, {
+            "label" : "Schleswig-Holstein",
+            "value" : "Schleswig-Holstein"
+          }, {
+            "label" : "Thüringen",
+            "value" : "Thüringen"
+          } ],
+          "label" : "Federal State"
+        }
+      }, {
+        "cid" : "layout10",
+        "type" : "Layout",
+        "config" : {
+          "components" : [ {
+            "cid" : "button11",
+            "type" : "Button",
+            "config" : {
+              "name" : "Cancel",
+              "action" : "void()"
+            }
+          }, {
+            "cid" : "button12",
+            "type" : "Button",
+            "config" : {
+              "name" : "Submit",
+              "action" : "void()"
+            }
+          } ]
+        }
+      } ],
+      "title" : "Personal Data"
+    }
+  } ]
+}
