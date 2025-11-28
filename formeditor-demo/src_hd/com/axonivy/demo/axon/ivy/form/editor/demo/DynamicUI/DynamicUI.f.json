@@ -19,7 +19,7 @@
             "cid" : "input4",
             "type" : "Input",
             "config" : {
-              "label" : "First Name"
+              "label" : "Last Name"
             }
           }, {
             "cid" : "input6",
@@ -41,6 +41,9 @@
         "config" : {
           "updateOnChange" : true,
           "staticItems" : [ {
+            "label" : "",
+            "value" : ""
+          }, {
             "label" : "Germany",
             "value" : "Germany"
           }, {
@@ -62,6 +65,9 @@
         "config" : {
           "visible" : "#{data.country eq 'Germany'}",
           "staticItems" : [ {
+            "label" : "",
+            "value" : ""
+          }, {
             "label" : "Baden-Württemberg",
             "value" : "Baden-Württemberg"
           }, {
