@@ -1,0 +1,152 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/form/13.1.0/form.json",
+  "id" : "203a5d66-9854-4143-9c9e-c44ea6fc6d35",
+  "components" : [ {
+    "cid" : "fieldset4",
+    "type" : "Fieldset",
+    "config" : {
+      "components" : [ {
+        "cid" : "layout1",
+        "type" : "Layout",
+        "config" : {
+          "components" : [ {
+            "cid" : "input2",
+            "type" : "Input",
+            "config" : {
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "First Name",
+              "value" : "#{data.firstName}"
+            }
+          }, {
+            "cid" : "input3",
+            "type" : "Input",
+            "config" : {
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "Input",
+              "value" : "#{data.lastName}"
+            }
+          }, {
+            "cid" : "input6",
+            "type" : "Input",
+            "config" : {
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "E-mail",
+              "value" : "#{data.email}",
+              "type" : "EMAIL"
+            }
+          }, {
+            "cid" : "input5",
+            "type" : "Input",
+            "config" : {
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "Age",
+              "value" : "#{data.age}",
+              "type" : "NUMBER",
+              "decimalPlaces" : "0"
+            }
+          }, {
+            "cid" : "datepicker7",
+            "type" : "DatePicker",
+            "config" : {
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "Date Picker",
+              "value" : "#{data.dateOfBirth}"
+            }
+          }, {
+            "cid" : "select8",
+            "type" : "Select",
+            "config" : {
+              "visible" : "#{data.isReadOnly eq 'false'}",
+              "dynamicItemsList" : "#{data.countries}",
+              "label" : "Country",
+              "value" : "#{data.selectedCountry}"
+            }
+          }, {
+            "cid" : "input17",
+            "type" : "Input",
+            "config" : {
+              "visible" : "#{data.isReadOnly eq 'true'}",
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "Country",
+              "value" : "#{data.selectedCountry}"
+            }
+          } ]
+        }
+      }, {
+        "cid" : "textarea19",
+        "type" : "Textarea",
+        "config" : {
+          "disabled" : "#{data.isReadOnly eq 'true'}",
+          "label" : "About me",
+          "value" : "#{data.aboutMe}",
+          "rows" : "5"
+        }
+      }, {
+        "cid" : "checkbox20",
+        "type" : "Checkbox",
+        "config" : {
+          "disabled" : "#{data.isReadOnly eq 'true'}",
+          "label" : "I accept the terms",
+          "selected" : "#{data.isTermsAccepted}"
+        }
+      }, {
+        "cid" : "layout21",
+        "type" : "Layout",
+        "config" : {
+          "visible" : "#{data.isReadOnly eq 'false'}",
+          "components" : [ {
+            "cid" : "button22",
+            "type" : "Button",
+            "config" : {
+              "name" : "Cancel",
+              "action" : "#{ivyWorkflowView.cancel()}",
+              "variant" : "SECONDARY",
+              "style" : "FLAT",
+              "processOnlySelf" : true
+            }
+          }, {
+            "cid" : "button23",
+            "type" : "Button",
+            "config" : {
+              "name" : "Submit",
+              "action" : "#{logic.close}",
+              "type" : "SUBMIT",
+              "icon" : "si si-check-1"
+            }
+          } ],
+          "type" : "FLEX",
+          "justifyContent" : "END"
+        }
+      }, {
+        "cid" : "layout14",
+        "type" : "Layout",
+        "config" : {
+          "visible" : "#{data.isReadOnly eq 'true'}",
+          "components" : [ {
+            "cid" : "button15",
+            "type" : "Button",
+            "config" : {
+              "name" : "Cancel",
+              "action" : "#{ivyWorkflowView.cancel()}",
+              "variant" : "SECONDARY",
+              "style" : "FLAT",
+              "processOnlySelf" : true
+            }
+          }, {
+            "cid" : "button16",
+            "type" : "Button",
+            "config" : {
+              "name" : "Approve",
+              "action" : "#{logic.close}",
+              "type" : "SUBMIT",
+              "icon" : "si si-check-1"
+            }
+          } ],
+          "type" : "FLEX",
+          "justifyContent" : "END"
+        }
+      } ],
+      "legend" : "User Information"
+    }
+  } ]
+}
