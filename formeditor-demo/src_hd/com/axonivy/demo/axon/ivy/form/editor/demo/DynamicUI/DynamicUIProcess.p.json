@@ -18,7 +18,8 @@
           ],
           "map" : {
             "out.data" : "param.data",
-            "out.isReadOnly" : "param.isReadOnly"
+            "out.isReadOnly" : "param.isReadOnly",
+            "out.states" : "com.axonivy.demo.axon.ivy.form.editor.demo.enums.FederalState.values().stream().toList()"
           }
         },
         "result" : {

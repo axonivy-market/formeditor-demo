@@ -11,5 +11,9 @@
     "name" : "isReadOnly",
     "type" : "Boolean",
     "modifiers" : [ "PERSISTENT" ]
+  }, {
+    "name" : "states",
+    "type" : "List<com.axonivy.demo.axon.ivy.form.editor.demo.enums.FederalState>",
+    "modifiers" : [ "PERSISTENT" ]
   } ]
 }

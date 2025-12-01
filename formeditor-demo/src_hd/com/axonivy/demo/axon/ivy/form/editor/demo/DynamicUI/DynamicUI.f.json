@@ -75,53 +75,10 @@
         "config" : {
           "visible" : "#{data.data.country eq 'Germany'}",
           "disabled" : "#{data.isReadOnly}",
-          "staticItems" : [ {
-            "label" : "",
-            "value" : ""
-          }, {
-            "label" : "Baden-Württemberg",
-            "value" : "Baden-Württemberg"
-          }, {
-            "label" : "Bayern",
-            "value" : "Bayern"
-          }, {
-            "label" : "Berlin",
-            "value" : "Berlin"
-          }, {
-            "label" : "Brandenburg",
-            "value" : "Brandenburg"
-          }, {
-            "label" : "Bremen",
-            "value" : "Bremen"
-          }, {
-            "label" : "Hamburg",
-            "value" : "Hamburg"
-          }, {
-            "label" : "Hessen",
-            "value" : "Hessen"
-          }, {
-            "label" : "Mecklenburg-Vorpommern",
-            "value" : "Mecklenburg-Vorpommern"
-          }, {
-            "label" : "Niedersachsen",
-            "value" : "Niedersachsen"
-          }, {
-            "label" : "Nordrhein-Westfalen",
-            "value" : "Nordrhein-Westfalen"
-          }, {
-            "label" : "Rheinland-Pfalz",
-            "value" : "Rheinland-Pfalz"
-          }, {
-            "label" : "SaarlandSachsenSachsen-Anhalt",
-            "value" : "SaarlandSachsenSachsen-Anhalt"
-          }, {
-            "label" : "Schleswig-Holstein",
-            "value" : "Schleswig-Holstein"
-          }, {
-            "label" : "Thüringen",
-            "value" : "Thüringen"
-          } ],
-          "label" : "Federal State"
+          "dynamicItemsList" : "#{data.states}",
+          "dynamicItemsLabel" : "#{item.officialName}",
+          "label" : "Federal State",
+          "value" : "#{data.data.federalState}"
         }
       }, {
         "cid" : "layout10",
