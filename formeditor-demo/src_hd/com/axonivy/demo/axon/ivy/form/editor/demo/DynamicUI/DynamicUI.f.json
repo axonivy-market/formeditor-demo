@@ -98,7 +98,7 @@
             "type" : "Button",
             "config" : {
               "id" : "cancel",
-              "name" : "Cancel",
+              "name" : "Cancel#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/DynamicUI/Cancel')}",
               "action" : "void()"
             }
           }, {
@@ -106,7 +106,7 @@
             "type" : "Button",
             "config" : {
               "id" : "submit",
-              "name" : "Submit",
+              "name" : "#{data.isReadOnly ? ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/DynamicUI/Approved') : ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/DynamicUI/Submit') }",
               "action" : "#{logic.close}"
             }
           } ]

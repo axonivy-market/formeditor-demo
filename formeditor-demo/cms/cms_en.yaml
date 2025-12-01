@@ -1,0 +1,13 @@
+Dialogs:
+  com:
+    axonivy:
+      demo:
+        axon:
+          ivy:
+            form:
+              editor:
+                demo:
+                  DynamicUI:
+                    Approved: Approved
+                    Cancel: Cancel
+                    Submit: Submit

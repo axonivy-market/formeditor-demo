@@ -4,7 +4,7 @@ public enum FederalState {
 
   BADEN("Baden-Württemberg"), BAYERN("Bayern"), BERLIN("Berlin"), BRANDENBURG("Brandenburg"), HAMBURG("Hamburg"), HESSEN("Hessen"),
   MECKLENBURG("Mecklenburg-Vorpommern"), NIEDERSACHSEN("Niedersachsen"), NORDRHEIN("Nordrhein-Westfalen"), RHEINLAND("Rheinland-Pfalz"),
-  ANHALT("SaarlandSachsenSachsen-Anhalt"), SCHLESWIG("Schleswig-Holstein"), THURINGEN("Thüringen");
+  ANHALT("Sachsen-Anhalt"), SAARLAND("Saarland Sachsen"), SCHLESWIG("Schleswig-Holstein"), THURINGEN("Thüringen");
 
   private final String officialName;
 
