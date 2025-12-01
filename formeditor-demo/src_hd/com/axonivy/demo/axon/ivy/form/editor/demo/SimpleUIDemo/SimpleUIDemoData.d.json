@@ -5,34 +5,12 @@
   "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "countries",
-    "type" : "List<String>"
+    "type" : "List<com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country>"
   }, {
-    "name" : "firstName",
-    "type" : "String"
-  }, {
-    "name" : "lastName",
-    "type" : "String"
-  }, {
-    "name" : "age",
-    "type" : "Number"
-  }, {
-    "name" : "selectedCountry",
-    "type" : "String"
+    "name" : "personalInfo",
+    "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo"
   }, {
     "name" : "isReadOnly",
-    "type" : "Boolean"
-  }, {
-    "name" : "dateOfBirth",
-    "type" : "String"
-  }, {
-    "name" : "email",
-    "type" : "String"
-  }, {
-    "name" : "aboutMe",
-    "type" : "String",
-    "modifiers" : []
-  }, {
-    "name" : "isTermsAccepted",
     "type" : "Boolean",
     "modifiers" : []
   } ]

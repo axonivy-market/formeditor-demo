@@ -15,7 +15,7 @@
             "config" : {
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "First Name",
-              "value" : "#{data.firstName}"
+              "value" : "#{data.personalInfo.firstName}"
             }
           }, {
             "cid" : "input3",
@@ -23,7 +23,7 @@
             "config" : {
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "Input",
-              "value" : "#{data.lastName}"
+              "value" : "#{data.personalInfo.lastName}"
             }
           }, {
             "cid" : "input6",
@@ -31,7 +31,7 @@
             "config" : {
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "E-mail",
-              "value" : "#{data.email}",
+              "value" : "#{data.personalInfo.email}",
               "type" : "EMAIL"
             }
           }, {
@@ -40,7 +40,7 @@
             "config" : {
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "Age",
-              "value" : "#{data.age}",
+              "value" : "#{data.personalInfo.age}",
               "type" : "NUMBER",
               "decimalPlaces" : "0"
             }
@@ -50,16 +50,7 @@
             "config" : {
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "Date Picker",
-              "value" : "#{data.dateOfBirth}"
-            }
-          }, {
-            "cid" : "select8",
-            "type" : "Select",
-            "config" : {
-              "visible" : "#{data.isReadOnly eq 'false'}",
-              "dynamicItemsList" : "#{data.countries}",
-              "label" : "Country",
-              "value" : "#{data.selectedCountry}"
+              "value" : "#{data.personalInfo.dateOfBirth}"
             }
           }, {
             "cid" : "input17",
@@ -68,7 +59,17 @@
               "visible" : "#{data.isReadOnly eq 'true'}",
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "Country",
-              "value" : "#{data.selectedCountry}"
+              "value" : "#{data.personalInfo.country}"
+            }
+          }, {
+            "cid" : "select24",
+            "type" : "Select",
+            "config" : {
+              "visible" : "#{data.isReadOnly eq 'false'}",
+              "dynamicItemsList" : "#{data.countries}",
+              "dynamicItemsLabel" : "#{item.name}",
+              "label" : "Country",
+              "value" : "#{data.personalInfo.country}"
             }
           } ]
         }
@@ -78,7 +79,7 @@
         "config" : {
           "disabled" : "#{data.isReadOnly eq 'true'}",
           "label" : "About me",
-          "value" : "#{data.aboutMe}",
+          "value" : "#{data.personalInfo.aboutMe}",
           "rows" : "5"
         }
       }, {
@@ -87,7 +88,7 @@
         "config" : {
           "disabled" : "#{data.isReadOnly eq 'true'}",
           "label" : "I accept the terms",
-          "selected" : "#{data.isTermsAccepted}"
+          "selected" : "#{data.personalInfo.isTermsAccepted}"
         }
       }, {
         "cid" : "layout21",
