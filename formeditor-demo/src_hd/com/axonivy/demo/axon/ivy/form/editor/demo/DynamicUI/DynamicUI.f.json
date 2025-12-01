@@ -13,25 +13,34 @@
             "cid" : "input5",
             "type" : "Input",
             "config" : {
-              "label" : "First Name"
+              "disabled" : "#{data.isReadOnly}",
+              "label" : "First Name",
+              "value" : "#{data.data.firstName}"
             }
           }, {
             "cid" : "input4",
             "type" : "Input",
             "config" : {
-              "label" : "Last Name"
+              "disabled" : "#{data.isReadOnly}",
+              "label" : "Last Name",
+              "value" : "#{data.data.lastName}"
             }
           }, {
             "cid" : "input6",
             "type" : "Input",
             "config" : {
-              "label" : "Email"
+              "disabled" : "#{data.isReadOnly}",
+              "label" : "Email",
+              "value" : "#{data.data.eMail}",
+              "type" : "EMAIL"
             }
           }, {
             "cid" : "datepicker7",
             "type" : "DatePicker",
             "config" : {
-              "label" : "Date of Birth"
+              "disabled" : "#{data.isReadOnly}",
+              "label" : "Date of Birth",
+              "value" : "#{data.data.dateOfBirth}"
             }
           } ]
         }
@@ -39,6 +48,7 @@
         "cid" : "select8",
         "type" : "Select",
         "config" : {
+          "disabled" : "#{data.isReadOnly}",
           "updateOnChange" : true,
           "staticItems" : [ {
             "label" : "",
@@ -57,13 +67,14 @@
             "value" : "Vietnam"
           } ],
           "label" : "Country",
-          "value" : "#{data.country}"
+          "value" : "#{data.data.country}"
         }
       }, {
         "cid" : "select9",
         "type" : "Select",
         "config" : {
-          "visible" : "#{data.country eq 'Germany'}",
+          "visible" : "#{data.data.country eq 'Germany'}",
+          "disabled" : "#{data.isReadOnly}",
           "staticItems" : [ {
             "label" : "",
             "value" : ""
@@ -116,6 +127,7 @@
         "cid" : "layout10",
         "type" : "Layout",
         "config" : {
+          "visible" : "#{data.isReadOnly ne true}",
           "components" : [ {
             "cid" : "button11",
             "type" : "Button",
@@ -128,7 +140,7 @@
             "type" : "Button",
             "config" : {
               "name" : "Submit",
-              "action" : "void()"
+              "action" : "#{logic.close}"
             }
           } ]
         }

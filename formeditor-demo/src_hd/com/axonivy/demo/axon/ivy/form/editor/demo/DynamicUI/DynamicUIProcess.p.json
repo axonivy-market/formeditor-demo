@@ -8,9 +8,27 @@
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
-      "name" : "start()",
+      "name" : "start(PersonalData,Boolean)",
       "config" : {
         "signature" : "start",
+        "input" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalData", "desc" : "" },
+            { "name" : "isReadOnly", "type" : "Boolean", "desc" : "" }
+          ],
+          "map" : {
+            "out.data" : "param.data",
+            "out.isReadOnly" : "param.isReadOnly"
+          }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalData", "desc" : "" }
+          ],
+          "map" : {
+            "result.data" : "in.data"
+          }
+        },
         "guid" : "19AC660D1BFADCC0"
       },
       "visual" : {

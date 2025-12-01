@@ -4,8 +4,12 @@
   "namespace" : "com.axonivy.demo.axon.ivy.form.editor.demo.DynamicUI",
   "isBusinessCaseData" : false,
   "fields" : [ {
-    "name" : "country",
-    "type" : "String",
+    "name" : "data",
+    "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalData",
+    "modifiers" : [ "PERSISTENT" ]
+  }, {
+    "name" : "isReadOnly",
+    "type" : "Boolean",
     "modifiers" : [ "PERSISTENT" ]
   } ]
 }
