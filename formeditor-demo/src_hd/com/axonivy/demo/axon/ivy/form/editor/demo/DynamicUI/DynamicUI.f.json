@@ -5,6 +5,7 @@
     "cid" : "panel1",
     "type" : "Panel",
     "config" : {
+      "id" : "personal-data",
       "components" : [ {
         "cid" : "layout2",
         "type" : "Layout",
@@ -13,6 +14,7 @@
             "cid" : "input5",
             "type" : "Input",
             "config" : {
+              "id" : "first-name",
               "disabled" : "#{data.isReadOnly}",
               "label" : "First Name",
               "value" : "#{data.data.firstName}"
@@ -21,6 +23,7 @@
             "cid" : "input4",
             "type" : "Input",
             "config" : {
+              "id" : "last-name",
               "disabled" : "#{data.isReadOnly}",
               "label" : "Last Name",
               "value" : "#{data.data.lastName}"
@@ -29,6 +32,7 @@
             "cid" : "input6",
             "type" : "Input",
             "config" : {
+              "id" : "email",
               "disabled" : "#{data.isReadOnly}",
               "label" : "Email",
               "value" : "#{data.data.eMail}",
@@ -38,6 +42,7 @@
             "cid" : "datepicker7",
             "type" : "DatePicker",
             "config" : {
+              "id" : "date-of-birth",
               "disabled" : "#{data.isReadOnly}",
               "label" : "Date of Birth",
               "value" : "#{data.data.dateOfBirth}"
@@ -48,6 +53,7 @@
         "cid" : "select8",
         "type" : "Select",
         "config" : {
+          "id" : "country",
           "disabled" : "#{data.isReadOnly}",
           "updateOnChange" : true,
           "staticItems" : [ {
@@ -73,6 +79,7 @@
         "cid" : "select9",
         "type" : "Select",
         "config" : {
+          "id" : "federal-state",
           "visible" : "#{data.data.country eq 'Germany'}",
           "disabled" : "#{data.isReadOnly}",
           "dynamicItemsList" : "#{data.states}",
@@ -84,11 +91,13 @@
         "cid" : "layout10",
         "type" : "Layout",
         "config" : {
+          "id" : "action-button",
           "visible" : "#{data.isReadOnly ne true}",
           "components" : [ {
             "cid" : "button11",
             "type" : "Button",
             "config" : {
+              "id" : "cancel",
               "name" : "Cancel",
               "action" : "void()"
             }
@@ -96,6 +105,7 @@
             "cid" : "button12",
             "type" : "Button",
             "config" : {
+              "id" : "submit",
               "name" : "Submit",
               "action" : "#{logic.close}"
             }
