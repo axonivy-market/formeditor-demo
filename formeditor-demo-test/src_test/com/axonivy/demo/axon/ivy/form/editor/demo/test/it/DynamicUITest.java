@@ -12,7 +12,7 @@ public class DynamicUITest extends WebBaseSetup {
   private static final String FEDERAL_STATE_DROPDOWN_CSS_SELECTOR = "#form\\:federal-state";
 
   @Test
-  void dynamicUIShowShowFederalStateWhenCountryOfGermanyIsChosen() {
+  void dynamicUIShowFederalStateWhenCountryOfGermanyIsChosen() {
     login();
     startDynamicUIProcess();
     // Click to "Germany" option in Country drop-down

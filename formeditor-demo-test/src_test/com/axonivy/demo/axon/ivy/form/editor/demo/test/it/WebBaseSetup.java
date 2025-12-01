@@ -34,7 +34,7 @@ public class WebBaseSetup {
     String dropdownListCssSelector = dropdownCssSelector + dropdownListSuffix;
     verifyElementVisible(dropdownListCssSelector);
 
-    // Find 1st option (index = 1 to avoid choosing default initial option of null)
+    // Find the dropdown item that matches the label text
     SelenideElement targetElement = $$(dropdownListCssSelector + " li").stream().filter(item -> labelText.equals(item.text())).findAny()
         .orElseThrow(() -> new AssertionError(getDropdownItemNotFoundMessage(labelText)))
         .shouldBe(visible, Duration.ofSeconds(DEFAULT_TIMEOUT_DURATION));

@@ -6,7 +6,7 @@ public enum FederalState {
   MECKLENBURG("Mecklenburg-Vorpommern"), NIEDERSACHSEN("Niedersachsen"), NORDRHEIN("Nordrhein-Westfalen"), RHEINLAND("Rheinland-Pfalz"),
   ANHALT("SaarlandSachsenSachsen-Anhalt"), SCHLESWIG("Schleswig-Holstein"), THURINGEN("Thüringen");
 
-  private String officialName;
+  private final String officialName;
 
   private FederalState(String officialName) {
     this.officialName = officialName;
