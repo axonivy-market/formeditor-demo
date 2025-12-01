@@ -8,8 +8,8 @@ import com.axonivy.ivy.webtest.IvyWebTest;
 @IvyWebTest
 public class DynamicUITest extends WebBaseSetup {
 
-  private static final String COUNTRY_DROPDOWN_CSS_SELECTOR = "#form\\:select8";
-  private static final String FEDERAL_STATE_DROPDOWN_CSS_SELECTOR = "#form\\:select9";
+  private static final String COUNTRY_DROPDOWN_CSS_SELECTOR = "#form\\:country";
+  private static final String FEDERAL_STATE_DROPDOWN_CSS_SELECTOR = "#form\\:federal-state";
 
   @Test
   void dynamicUIShowShowFederalStateWhenCountryOfGermanyIsChosen() {

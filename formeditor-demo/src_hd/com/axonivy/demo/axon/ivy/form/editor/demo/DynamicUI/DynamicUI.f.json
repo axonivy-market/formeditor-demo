@@ -57,7 +57,7 @@
           "disabled" : "#{data.isReadOnly}",
           "updateOnChange" : true,
           "staticItems" : [ {
-            "label" : "",
+            "label" : "Please select a country",
             "value" : ""
           }, {
             "label" : "Germany",
