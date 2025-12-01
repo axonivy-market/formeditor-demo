@@ -1,41 +1,42 @@
 {
   "$schema" : "https://json-schema.axonivy.com/process/13.1.2/process.json",
-  "id" : "19AD78C2107919BE",
+  "id" : "19AD96A34BF30049",
   "kind" : "HTML_DIALOG",
   "config" : {
-    "data" : "com.axonivy.demo.axon.ivy.form.editor.demo.SimpleUIDemo.SimpleUIDemoData"
+    "data" : "com.axonivy.demo.axon.ivy.form.editor.demo.SimpleUI.SimpleUIData"
   },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
-      "name" : "start(Boolean, UserInfo)",
+      "name" : "start(Boolean, PersonalInfo)",
       "config" : {
         "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "personalInfo", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo", "desc" : "" },
-            { "name" : "isReadOnly", "type" : "Boolean", "desc" : "" }
+            { "name" : "isReadOnly", "type" : "Boolean", "desc" : "" },
+            { "name" : "personalInfo", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo", "desc" : "" }
           ],
           "map" : {
+            "out.countries" : "com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country.values().stream().toList()",
+            "out.isReadOnly" : "param.isReadOnly",
             "out.personalInfo" : "param.personalInfo"
           }
         },
         "result" : {
           "params" : [
-            { "name" : "info", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.SimpleUIDemo.SimpleUIDemoData", "desc" : "" }
+            { "name" : "personalInfo", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo", "desc" : "" }
           ],
           "map" : {
-            "result.info" : "in",
-            "result.info.isReadOnly" : "true"
+            "result.personalInfo" : "in.personalInfo"
           }
         },
-        "guid" : "19AD78C2108FC038"
+        "guid" : "19AD96A34C12ABF8"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
       "connect" : [
-        { "id" : "f6", "to" : "f1" }
+        { "id" : "f2", "to" : "f1" }
       ]
     }, {
       "id" : "f1",
@@ -48,10 +49,10 @@
       "type" : "HtmlDialogEventStart",
       "name" : "close",
       "config" : {
-        "guid" : "19AD78C2109828A0"
+        "guid" : "19AD96A34C2B0CCC"
       },
       "visual" : {
-        "at" : { "x" : 96, "y" : 152 }
+        "at" : { "x" : 96, "y" : 160 }
       },
       "connect" : [
         { "id" : "f5", "to" : "f4" }
@@ -60,7 +61,7 @@
       "id" : "f4",
       "type" : "HtmlDialogExit",
       "visual" : {
-        "at" : { "x" : 224, "y" : 152 }
+        "at" : { "x" : 224, "y" : 160 }
       }
     } ]
 }

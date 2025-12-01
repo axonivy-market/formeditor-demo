@@ -1,6 +1,6 @@
 package com.axonivy.demo.axon.ivy.form.editor.demo.bo;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country;
 
@@ -9,7 +9,7 @@ public class PersonalInfo {
   private String lastName;
   private String email;
   private Integer age;
-  private LocalDate dateOfBirth;
+  private Date dateOfBirth;
   private Country country;
   private String aboutMe;
   private Boolean isTermsAccepted;
@@ -46,11 +46,11 @@ public class PersonalInfo {
     this.age = age;
   }
 
-  public LocalDate getDateOfBirth() {
+  public Date getDateOfBirth() {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(Date dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 

@@ -1,102 +1,111 @@
 {
   "$schema" : "https://json-schema.axonivy.com/form/13.1.0/form.json",
-  "id" : "203a5d66-9854-4143-9c9e-c44ea6fc6d35",
+  "id" : "0d9509b7-429a-4da7-a373-5f7d6df58d84",
   "components" : [ {
-    "cid" : "fieldset4",
+    "cid" : "fieldset1",
     "type" : "Fieldset",
     "config" : {
+      "id" : "personal-info",
       "components" : [ {
-        "cid" : "layout1",
+        "cid" : "layout2",
         "type" : "Layout",
         "config" : {
           "components" : [ {
-            "cid" : "input2",
+            "cid" : "input3",
             "type" : "Input",
             "config" : {
+              "id" : "first-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "First Name",
               "value" : "#{data.personalInfo.firstName}"
             }
           }, {
-            "cid" : "input3",
+            "cid" : "input4",
             "type" : "Input",
             "config" : {
+              "id" : "last-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Input",
+              "label" : "Last Name",
               "value" : "#{data.personalInfo.lastName}"
             }
           }, {
-            "cid" : "input6",
+            "cid" : "input5",
             "type" : "Input",
             "config" : {
+              "id" : "email",
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "E-mail",
               "value" : "#{data.personalInfo.email}",
               "type" : "EMAIL"
             }
           }, {
-            "cid" : "input5",
+            "cid" : "input6",
             "type" : "Input",
             "config" : {
+              "id" : "age",
               "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "Age",
               "value" : "#{data.personalInfo.age}",
-              "type" : "NUMBER",
-              "decimalPlaces" : "0"
+              "type" : "NUMBER"
             }
           }, {
             "cid" : "datepicker7",
             "type" : "DatePicker",
             "config" : {
+              "id" : "date-of-birth",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Date Picker",
+              "label" : "Date of Birth",
               "value" : "#{data.personalInfo.dateOfBirth}"
             }
           }, {
-            "cid" : "input17",
-            "type" : "Input",
-            "config" : {
-              "visible" : "#{data.isReadOnly eq 'true'}",
-              "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Country",
-              "value" : "#{data.personalInfo.country}"
-            }
-          }, {
-            "cid" : "select24",
+            "cid" : "select8",
             "type" : "Select",
             "config" : {
+              "id" : "countries",
               "visible" : "#{data.isReadOnly eq 'false'}",
               "dynamicItemsList" : "#{data.countries}",
               "dynamicItemsLabel" : "#{item.name}",
               "label" : "Country",
               "value" : "#{data.personalInfo.country}"
             }
+          }, {
+            "cid" : "input9",
+            "type" : "Input",
+            "config" : {
+              "id" : "selected-country",
+              "visible" : "#{data.isReadOnly eq 'true'}",
+              "disabled" : "#{data.isReadOnly eq 'true'}",
+              "label" : "Country",
+              "value" : "#{data.personalInfo.country}"
+            }
           } ]
         }
       }, {
-        "cid" : "textarea19",
+        "cid" : "textarea10",
         "type" : "Textarea",
         "config" : {
+          "id" : "about-me",
           "disabled" : "#{data.isReadOnly eq 'true'}",
-          "label" : "About me",
+          "label" : "About Me",
           "value" : "#{data.personalInfo.aboutMe}",
           "rows" : "5"
         }
       }, {
-        "cid" : "checkbox20",
+        "cid" : "checkbox11",
         "type" : "Checkbox",
         "config" : {
+          "id" : "terms-accpeted",
           "disabled" : "#{data.isReadOnly eq 'true'}",
           "label" : "I accept the terms",
           "selected" : "#{data.personalInfo.isTermsAccepted}"
         }
       }, {
-        "cid" : "layout21",
+        "cid" : "layout15",
         "type" : "Layout",
         "config" : {
           "visible" : "#{data.isReadOnly eq 'false'}",
           "components" : [ {
-            "cid" : "button22",
+            "cid" : "button16",
             "type" : "Button",
             "config" : {
               "name" : "Cancel",
@@ -106,9 +115,10 @@
               "processOnlySelf" : true
             }
           }, {
-            "cid" : "button23",
+            "cid" : "button17",
             "type" : "Button",
             "config" : {
+              "id" : "submit-button",
               "name" : "Submit",
               "action" : "#{logic.close}",
               "type" : "SUBMIT",
@@ -119,12 +129,12 @@
           "justifyContent" : "END"
         }
       }, {
-        "cid" : "layout14",
+        "cid" : "layout12",
         "type" : "Layout",
         "config" : {
           "visible" : "#{data.isReadOnly eq 'true'}",
           "components" : [ {
-            "cid" : "button15",
+            "cid" : "button13",
             "type" : "Button",
             "config" : {
               "name" : "Cancel",
@@ -134,9 +144,10 @@
               "processOnlySelf" : true
             }
           }, {
-            "cid" : "button16",
+            "cid" : "button14",
             "type" : "Button",
             "config" : {
+              "id" : "approve-button",
               "name" : "Approve",
               "action" : "#{logic.close}",
               "type" : "SUBMIT",
@@ -147,7 +158,7 @@
           "justifyContent" : "END"
         }
       } ],
-      "legend" : "User Information"
+      "legend" : "Personal info"
     }
   } ]
 }
