@@ -15,6 +15,7 @@ import com.codeborne.selenide.SelenideElement;
 
 public class WebBaseSetup {
   protected static final String DYNAMIC_UI_PROCESS_PATH = "formeditor-demo/19AC88F44CEAAC4D/start.ivp";
+  protected static final String SIMPLE_UI_PROCESS_PATH = "formeditor-demo/19AD969A4DE3F4B3/start.ivp";
   protected static final int DEFAULT_TIMEOUT_DURATION = 2;
   protected static final String LOGIN_URL = "formeditor-demo-test/19AD8A34AE465F0C/login.ivp?username=%s&password=%s";
   protected static final String DEVELOPER_USER = "Developer";
@@ -23,6 +24,10 @@ public class WebBaseSetup {
 
   protected void startDynamicUIProcess() {
     open(EngineUrl.createProcessUrl(DYNAMIC_UI_PROCESS_PATH));
+  }
+  
+  protected void startSimpleUIProcess() {
+    open(EngineUrl.createProcessUrl(SIMPLE_UI_PROCESS_PATH));
   }
 
   protected void verifyAndClickItemLabelInDropdown(String dropdownCssSelector, String labelText, String dropdownListSuffix,
