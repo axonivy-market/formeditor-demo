@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.demo.axon.ivy.form.editor.demo</groupId>
   <artifactId>formeditor-demo-test</artifactId>
-  <version>12.0.11-SNAPSHOT</version>
+  <version>12.0.0-SNAPSHOT</version>
   <packaging>iar-integration-test</packaging>
   <properties>
-    <project.build.plugin.version>12.0.11</project.build.plugin.version>
+    <project.build.plugin.version>12.0.8</project.build.plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tester.version>12.0.11</tester.version>
+    <tester.version>12.0.2</tester.version>
   </properties>
   <pluginRepositories>
     <!-- Snapshot releases are available via sonatype.org -->

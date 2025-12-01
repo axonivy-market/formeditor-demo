@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.demo.axon.ivy.form.editor.demo</groupId>
   <artifactId>formeditor-demo</artifactId>
-  <version>12.0.11-SNAPSHOT</version>
+  <version>12.0.0-SNAPSHOT</version>
   <packaging>iar</packaging>
   <properties>
-    <project.build.plugin.version>12.0.11</project.build.plugin.version>
+    <project.build.plugin.version>12.0.8</project.build.plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <pluginRepositories>
