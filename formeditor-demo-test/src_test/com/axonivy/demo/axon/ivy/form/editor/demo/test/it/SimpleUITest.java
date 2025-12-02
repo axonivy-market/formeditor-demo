@@ -13,7 +13,6 @@ public class SimpleUITest extends WebBaseSetup {
   void simpleUIShowCountriesWhenClick() {
     login();
     startSimpleUIProcess();
-    // Click to "Germany" option in Country drop-down
     verifyAndClickItemLabelInDropdown(COUNTRY_DROPDOWN_CSS_SELECTOR, Country.GERMANY.getName(), DROPDOWN_LIST_SUFFIX,
         DROPDOWN_LABEL_SUFFIX);
   }

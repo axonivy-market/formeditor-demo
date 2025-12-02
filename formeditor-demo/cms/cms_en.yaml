@@ -11,3 +11,15 @@ Dialogs:
                     Approved: Approved
                     Cancel: Cancel
                     Submit: Submit
+                  SimpleUI:
+                    AboutMe: About Me
+                    Age: Age
+                    Approve: Approve
+                    Cancel: Cancel
+                    Country: Country
+                    DateOfBirth: Date of Birth
+                    Email: E-mail
+                    FirstName: First Name
+                    IAcceptTheTerms: I accept the terms
+                    LastName: Last Name
+                    Submit: Submit

@@ -16,7 +16,7 @@
             "config" : {
               "id" : "first-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "First Name",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/FirstName')}",
               "value" : "#{data.personalInfo.firstName}"
             }
           }, {
@@ -25,7 +25,7 @@
             "config" : {
               "id" : "last-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Last Name",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/LastName')}",
               "value" : "#{data.personalInfo.lastName}"
             }
           }, {
@@ -34,7 +34,7 @@
             "config" : {
               "id" : "email",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "E-mail",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Email')}",
               "value" : "#{data.personalInfo.email}",
               "type" : "EMAIL"
             }
@@ -44,7 +44,7 @@
             "config" : {
               "id" : "age",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Age",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Age')}",
               "value" : "#{data.personalInfo.age}",
               "type" : "NUMBER"
             }
@@ -54,7 +54,7 @@
             "config" : {
               "id" : "date-of-birth",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Date of Birth",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/DateOfBirth')}",
               "value" : "#{data.personalInfo.dateOfBirth}"
             }
           }, {
@@ -65,7 +65,7 @@
               "visible" : "#{data.isReadOnly eq 'false'}",
               "dynamicItemsList" : "#{data.countries}",
               "dynamicItemsLabel" : "#{item.name}",
-              "label" : "Country",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Country')}",
               "value" : "#{data.personalInfo.country}"
             }
           }, {
@@ -75,7 +75,7 @@
               "id" : "selected-country",
               "visible" : "#{data.isReadOnly eq 'true'}",
               "disabled" : "#{data.isReadOnly eq 'true'}",
-              "label" : "Country",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Country')}",
               "value" : "#{data.personalInfo.country}"
             }
           } ]
@@ -86,7 +86,7 @@
         "config" : {
           "id" : "about-me",
           "disabled" : "#{data.isReadOnly eq 'true'}",
-          "label" : "About Me",
+          "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/AboutMe')}",
           "value" : "#{data.personalInfo.aboutMe}",
           "rows" : "5"
         }
@@ -96,7 +96,7 @@
         "config" : {
           "id" : "terms-accpeted",
           "disabled" : "#{data.isReadOnly eq 'true'}",
-          "label" : "I accept the terms",
+          "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/IAcceptTheTerms')}",
           "selected" : "#{data.personalInfo.isTermsAccepted}"
         }
       }, {
@@ -108,7 +108,7 @@
             "cid" : "button16",
             "type" : "Button",
             "config" : {
-              "name" : "Cancel",
+              "name" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Cancel')}",
               "action" : "#{ivyWorkflowView.cancel()}",
               "variant" : "SECONDARY",
               "style" : "FLAT",
@@ -119,7 +119,7 @@
             "type" : "Button",
             "config" : {
               "id" : "submit-button",
-              "name" : "Submit",
+              "name" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Submit')}",
               "action" : "#{logic.close}",
               "type" : "SUBMIT",
               "icon" : "si si-check-1"
@@ -137,7 +137,7 @@
             "cid" : "button13",
             "type" : "Button",
             "config" : {
-              "name" : "Cancel",
+              "name" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Cancel')}",
               "action" : "#{ivyWorkflowView.cancel()}",
               "variant" : "SECONDARY",
               "style" : "FLAT",
@@ -148,7 +148,7 @@
             "type" : "Button",
             "config" : {
               "id" : "approve-button",
-              "name" : "Approve",
+              "name" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Approve')}",
               "action" : "#{logic.close}",
               "type" : "SUBMIT",
               "icon" : "si si-check-1"
