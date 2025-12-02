@@ -68,19 +68,9 @@
             "type" : "Select",
             "config" : {
               "id" : "countries",
-              "visible" : "#{data.isReadOnly eq 'false'}",
+              "disabled" : "#{data.isReadOnly eq 'true'}",
               "dynamicItemsList" : "#{data.countries}",
               "dynamicItemsLabel" : "#{item.name}",
-              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Country')}",
-              "value" : "#{data.personalInfo.country}"
-            }
-          }, {
-            "cid" : "input9",
-            "type" : "Input",
-            "config" : {
-              "id" : "selected-country",
-              "visible" : "#{data.isReadOnly eq 'true'}",
-              "disabled" : "#{data.isReadOnly eq 'true'}",
               "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Country')}",
               "value" : "#{data.personalInfo.country}"
             }
@@ -100,7 +90,7 @@
         "cid" : "checkbox11",
         "type" : "Checkbox",
         "config" : {
-          "id" : "terms-accpeted",
+          "id" : "terms-accepted",
           "disabled" : "#{data.isReadOnly eq 'true'}",
           "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/IAcceptTheTerms')}",
           "selected" : "#{data.personalInfo.isTermsAccepted}"
