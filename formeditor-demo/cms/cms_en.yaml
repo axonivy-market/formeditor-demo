@@ -22,4 +22,5 @@ Dialogs:
                     FirstName: First Name
                     IAcceptTheTerms: I accept the terms
                     LastName: Last Name
+                    RequiredField: This field is required
                     Submit: Submit

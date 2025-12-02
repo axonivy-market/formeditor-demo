@@ -16,6 +16,8 @@
             "config" : {
               "id" : "first-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
+              "required" : "#{true}",
+              "requiredMessage" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/RequiredField')}",
               "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/FirstName')}",
               "value" : "#{data.personalInfo.firstName}"
             }
@@ -25,6 +27,8 @@
             "config" : {
               "id" : "last-name",
               "disabled" : "#{data.isReadOnly eq 'true'}",
+              "required" : "#{true}",
+              "requiredMessage" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/RequiredField')}",
               "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/LastName')}",
               "value" : "#{data.personalInfo.lastName}"
             }
@@ -34,6 +38,8 @@
             "config" : {
               "id" : "email",
               "disabled" : "#{data.isReadOnly eq 'true'}",
+              "required" : "#{true}",
+              "requiredMessage" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/RequiredField')}",
               "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/Email')}",
               "value" : "#{data.personalInfo.email}",
               "type" : "EMAIL"
