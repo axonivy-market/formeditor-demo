@@ -7,10 +7,6 @@ Dialogs:
             form:
               editor:
                 demo:
-                  DynamicUI:
-                    Approved: Approved
-                    Cancel: Cancel
-                    Submit: Submit
                   SimpleUI:
                     AboutMe: About Me
                     Age: Age
