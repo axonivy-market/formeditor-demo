@@ -1,5 +1,6 @@
 package com.axonivy.demo.axon.ivy.form.editor.demo.test.it;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country;
@@ -19,18 +20,20 @@ public class SimpleUITest extends WebBaseSetup {
   private static final String LASTNAME_INPUT_VALUE = "Vu";
   private static final String EMAIL_INPUT_VALUE = "hoangvu@gmail.com";
 
-  @Test
-  void simpleUIShowsCountriesDroppdownWhenClick() {
+  @BeforeEach
+  void setUpTest() {
     login();
     startSimpleUIProcess();
+  }
+  
+  @Test
+  void simpleUIShowsCountriesDroppdownWhenClick() {
     verifyAndClickItemLabelInDropdown(COUNTRY_DROPDOWN_CSS_SELECTOR, Country.GERMANY.getName(), DROPDOWN_LIST_SUFFIX,
         DROPDOWN_LABEL_SUFFIX);
   }
 
   @Test
   void simpleUIInputsShouldBeDisabledOnSecondScreen() {
-    login();
-    startSimpleUIProcess();
     fillInput(FIRSTNAME_INPUT_CSS_SELECTOR, FIRSTNAME_INPUT_VALUE);
     fillInput(LASTNAME_INPUT_CSS_SELECTOR, LASTNAME_INPUT_VALUE);
     fillInput(EMAIL_CSS_SELECTOR, EMAIL_INPUT_VALUE);

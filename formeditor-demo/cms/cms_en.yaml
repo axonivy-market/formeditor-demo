@@ -18,5 +18,8 @@ Dialogs:
                     FirstName: First Name
                     IAcceptTheTerms: I accept the terms
                     LastName: Last Name
+                    PersonalInfo: Personal info
                     RequiredField: This field is required
+                    SimpleUIDemo: Simple UI demo
+                    SimpleUIDescription: This is a simple UI demonstrating the Form Editor feature of Axon Ivy Designer
                     Submit: Submit

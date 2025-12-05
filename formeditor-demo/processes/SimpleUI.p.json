@@ -9,8 +9,15 @@
       "type" : "RequestStart",
       "name" : "start",
       "config" : {
-        "signature" : "start"
+        "signature" : "start",
+        "request" : {
+          "name" : "<%=ivy.cms.co(\"/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/SimpleUIDemo\")%>",
+          "description" : "<%=ivy.cms.co(\"/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/SimpleUI/SimpleUIDescription\")%>"
+        }
       },
+      "tags" : [
+        "demo"
+      ],
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },

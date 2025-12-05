@@ -17,7 +17,7 @@
             { "name" : "personalInfo", "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo", "desc" : "" }
           ],
           "map" : {
-            "out.countries" : "com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country.values().stream().toList()",
+            "out.countries" : "com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country.getSortedByName()",
             "out.isReadOnly" : "param.isReadOnly",
             "out.personalInfo" : "param.personalInfo"
           }
