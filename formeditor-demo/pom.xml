@@ -8,7 +8,7 @@
     <version>13.1.1</version>
     <relativePath></relativePath>
   </parent>
-  <groupId>com.axonivy.demo.axon.ivy.form.editor.demo</groupId>
+  <groupId>com.axonivy.demo.formdemo</groupId>
   <artifactId>formeditor-demo</artifactId>
   <version>13.1.1-SNAPSHOT</version>
   <packaging>iar</packaging>
@@ -21,6 +21,15 @@
       <artifactId>ivy-api</artifactId>
     </dependency>
   </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.primefaces</groupId>
+        <artifactId>primefaces</artifactId>
+        <version>13.0.17-LTS</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <repositories>
     <repository>
       <snapshots>
