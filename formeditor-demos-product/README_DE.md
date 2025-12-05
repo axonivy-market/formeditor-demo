@@ -6,7 +6,7 @@ When you create your very valuable documentation, please be aware that this  is 
 
 # FormEditor Demo Demo
 
-Bitte übersetze mindestens das "Description"-Chapter aus https://github.com/axonivy-market/formeditor-demo/blob/master/formeditor-demo-product/README.md. Es wird auf unserer Homepage angezeigt.
+Bitte übersetze mindestens das "Description"-Chapter aus https://github.com/axonivy-market/formeditor-demos/blob/master/formeditor-demos-product/README.md. Es wird auf unserer Homepage angezeigt.
 Falls Du darüber hinaus auch die anderen Chapter übersetzt, werden auch diese auf der Homepage auf Deutsch angezeigt.
 
 <!--

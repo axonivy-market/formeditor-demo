@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axonivy.demo.formeditordemos</groupId>
-  <artifactId>formeditor-demo-test</artifactId>
+  <artifactId>formeditor-demos-test</artifactId>
   <version>12.0.0-SNAPSHOT</version>
   <packaging>iar-integration-test</packaging>
   <properties>
