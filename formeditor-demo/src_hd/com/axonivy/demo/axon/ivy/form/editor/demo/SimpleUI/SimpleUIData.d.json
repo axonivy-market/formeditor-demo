@@ -4,26 +4,16 @@
   "namespace" : "com.axonivy.demo.axon.ivy.form.editor.demo.SimpleUI",
   "isBusinessCaseData" : false,
   "fields" : [ {
+    "name" : "personalInfo",
+    "type" : "com.axonivy.demo.axon.ivy.form.editor.demo.bo.PersonalInfo",
+    "modifiers" : []
+  }, {
+    "name" : "isReadOnly",
+    "type" : "Boolean",
+    "modifiers" : []
+  }, {
     "name" : "countries",
-    "type" : "List<String>"
-  }, {
-    "name" : "country",
-    "type" : "String"
-  }, {
-    "name" : "firstName",
-    "type" : "String",
-    "modifiers" : []
-  }, {
-    "name" : "lastName",
-    "type" : "String",
-    "modifiers" : []
-  }, {
-    "name" : "email",
-    "type" : "String",
-    "modifiers" : []
-  }, {
-    "name" : "dateOfBirth",
-    "type" : "String",
+    "type" : "List<com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country>",
     "modifiers" : []
   } ]
 }
