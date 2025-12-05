@@ -3,7 +3,7 @@
   "id" : "19AD91EAD6A32F3E",
   "kind" : "HTML_DIALOG",
   "config" : {
-    "data" : "com.axonivy.demo.formeditordemo.DynamicUI.DynamicUIData"
+    "data" : "com.axonivy.demo.formeditordemos.DynamicUI.DynamicUIData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -13,7 +13,7 @@
         "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.PersonalData", "desc" : "" },
+            { "name" : "data", "type" : "com.axonivy.demo.formeditordemos.PersonalData", "desc" : "" },
             { "name" : "isReadOnly", "type" : "Boolean", "desc" : "" }
           ],
           "map" : {
@@ -23,7 +23,7 @@
         },
         "result" : {
           "params" : [
-            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.PersonalData", "desc" : "" }
+            { "name" : "data", "type" : "com.axonivy.demo.formeditordemos.PersonalData", "desc" : "" }
           ],
           "map" : {
             "result.data" : "in.data"

@@ -1,4 +1,4 @@
-package com.axonivy.demo.formeditordemo.test.it;
+package com.axonivy.demo.formeditordemos.test.it;
 
 import org.junit.jupiter.api.Test;
 
