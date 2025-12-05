@@ -35,7 +35,7 @@
               "id" : "email",
               "disabled" : "#{data.isReadOnly}",
               "label" : "Email#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/Email')}",
-              "value" : "#{data.data.eMail}",
+              "value" : "#{data.data.email}",
               "type" : "EMAIL"
             }
           }, {
