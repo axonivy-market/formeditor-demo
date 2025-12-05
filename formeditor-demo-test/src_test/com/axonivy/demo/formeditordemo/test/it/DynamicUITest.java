@@ -1,8 +1,8 @@
-package com.axonivy.demo.axon.ivy.form.editor.demo.test.it;
+package com.axonivy.demo.formeditordemo.test.it;
 
 import org.junit.jupiter.api.Test;
 
-import com.axonivy.demo.axon.ivy.form.editor.demo.enums.Country;
+import com.axonivy.demo.formeditordemo.enums.Country;
 import com.axonivy.ivy.webtest.IvyWebTest;
 
 @IvyWebTest

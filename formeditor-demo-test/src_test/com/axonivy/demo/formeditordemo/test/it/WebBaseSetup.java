@@ -1,4 +1,4 @@
-package com.axonivy.demo.axon.ivy.form.editor.demo.test.it;
+package com.axonivy.demo.formeditordemo.test.it;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
