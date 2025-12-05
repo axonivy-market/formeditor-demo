@@ -1,0 +1,19 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/data-class/13.1.0/data-class.json",
+  "simpleName" : "DynamicUIData",
+  "namespace" : "com.axonivy.demo.formeditordemo.DynamicUI",
+  "isBusinessCaseData" : false,
+  "fields" : [ {
+    "name" : "data",
+    "type" : "com.axonivy.demo.formeditordemo.bo.PersonalData",
+    "modifiers" : [ "PERSISTENT" ]
+  }, {
+    "name" : "isReadOnly",
+    "type" : "Boolean",
+    "modifiers" : [ "PERSISTENT" ]
+  }, {
+    "name" : "states",
+    "type" : "List<com.axonivy.demo.formeditordemo.enums.FederalState>",
+    "modifiers" : [ "PERSISTENT" ]
+  } ]
+}

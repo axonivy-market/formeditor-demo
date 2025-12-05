@@ -8,7 +8,7 @@
     <version>13.1.1</version>
     <relativePath></relativePath>
   </parent>
-  <groupId>com.axonivy.demo.axon.ivy.form.editor.demo</groupId>
+  <groupId>com.axonivy.demo.formdemo</groupId>
   <artifactId>formeditor-demo-test</artifactId>
   <version>13.1.1-SNAPSHOT</version>
   <packaging>iar-integration-test</packaging>
@@ -18,7 +18,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.axonivy.demo.axon.ivy.form.editor.demo</groupId>
+      <groupId>com.axonivy.demo.formdemo</groupId>
       <artifactId>formeditor-demo</artifactId>
       <version>${project.version}</version>
       <type>iar</type>

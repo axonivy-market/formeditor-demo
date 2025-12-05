@@ -2,7 +2,7 @@
   "$schema" : "https://json-schema.axonivy.com/process/13.1.2/process.json",
   "id" : "19AC88F44CEAAC4D",
   "config" : {
-    "data" : "com.axonivy.demo.axon.ivy.form.editor.demo.DynamicUIData"
+    "data": "com.axonivy.demo.axon.ivy.formeditordemo.DynamicUIData"
   },
   "elements" : [ {
       "id" : "f0",
