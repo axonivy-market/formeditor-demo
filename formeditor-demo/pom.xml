@@ -20,6 +20,15 @@
       <groupId>com.axonivy.ivy.api</groupId>
       <artifactId>ivy-api</artifactId>
     </dependency>
+    <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.primefaces</groupId>
+        <artifactId>primefaces</artifactId>
+        <version>13.0.17-LTS</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   </dependencies>
   <repositories>
     <repository>
