@@ -13,18 +13,17 @@
         "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.bo.PersonalData", "desc" : "" },
+            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.PersonalData", "desc" : "" },
             { "name" : "isReadOnly", "type" : "Boolean", "desc" : "" }
           ],
           "map" : {
             "out.data" : "param.data",
-            "out.isReadOnly" : "param.isReadOnly",
-            "out.states" : "com.axonivy.demo.formeditordemo.enums.FederalState.values()"
+            "out.isReadOnly" : "param.isReadOnly"
           }
         },
         "result" : {
           "params" : [
-            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.bo.PersonalData", "desc" : "" }
+            { "name" : "data", "type" : "com.axonivy.demo.formeditordemo.PersonalData", "desc" : "" }
           ],
           "map" : {
             "result.data" : "in.data"

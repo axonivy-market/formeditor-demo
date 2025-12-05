@@ -1,7 +1,7 @@
-# Axon Ivy Form Editor Demo Demo
+# Axon Ivy Form Editor Demo
 
 [![CI Build](https://github.com/axonivy-market/formeditor-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/axonivy-market/formeditor-demo/actions/workflows/ci.yml)
 
-"YOUR SHORT DESCRIPTION GOES HERE"
+Demo project for Axon Ivy Form editor
 
 Read our [documentation](formeditor-demo-product/README.md).

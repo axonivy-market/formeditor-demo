@@ -2,12 +2,14 @@ Dialogs:
   com:
     axonivy:
       demo:
-        axon:
-          ivy:
-            form:
-              editor:
-                demo:
-                  DynamicUI:
-                    Approved: Approved
-                    Cancel: Cancel
-                    Submit: Submit
+        formeditordemo:
+          DynamicUI:
+            Approved: Approved
+            Cancel: Cancel
+            Country: Country
+            DateOfBirth: Date of Birth
+            Email: Email
+            FederalState: Federal State
+            FirstName: First Name
+            LastName: Last Name
+            Submit: Submit

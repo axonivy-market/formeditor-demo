@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/form/13.1.0/form.json",
+  "$schema" : "https://json-schema.axonivy.com/form/12.0.6/form.json",
   "id" : "0c8f12b0-9d52-437b-952e-50fd9c8ea57d",
   "components" : [ {
     "cid" : "panel1",
@@ -16,7 +16,7 @@
             "config" : {
               "id" : "first-name",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "First Name",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/FirstName')}",
               "value" : "#{data.data.firstName}"
             }
           }, {
@@ -25,7 +25,7 @@
             "config" : {
               "id" : "last-name",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Last Name",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/LastName')}",
               "value" : "#{data.data.lastName}"
             }
           }, {
@@ -34,8 +34,8 @@
             "config" : {
               "id" : "email",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Email",
-              "value" : "#{data.data.eMail}",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/Email')}",
+              "value" : "#{data.data.email}",
               "type" : "EMAIL"
             }
           }, {
@@ -44,7 +44,7 @@
             "config" : {
               "id" : "date-of-birth",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Date of Birth",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/DateOfBirth')}",
               "value" : "#{data.data.dateOfBirth}"
             }
           } ]
@@ -72,7 +72,7 @@
             "label" : "Vietnam",
             "value" : "Vietnam"
           } ],
-          "label" : "Country",
+          "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/Country')}",
           "value" : "#{data.data.country}"
         }
       }, {
@@ -82,9 +82,51 @@
           "id" : "federal-state",
           "visible" : "#{data.data.country eq 'Germany'}",
           "disabled" : "#{data.isReadOnly}",
-          "dynamicItemsList" : "#{data.states}",
+          "staticItems" : [ {
+            "label" : "Baden-Württemberg",
+            "value" : "Baden"
+          }, {
+            "label" : "Bayern",
+            "value" : "Bayern"
+          }, {
+            "label" : "Berlin",
+            "value" : "Berlin"
+          }, {
+            "label" : "Brandenburg",
+            "value" : "Brandenburg"
+          }, {
+            "label" : "Hamburg",
+            "value" : "Hamburg"
+          }, {
+            "label" : "Hessen",
+            "value" : "Hessen"
+          }, {
+            "label" : "Mecklenburg-Vorpommern",
+            "value" : "Mecklenburg"
+          }, {
+            "label" : "Niedersachsen",
+            "value" : "Niedersachsen"
+          }, {
+            "label" : "Nordrhein-Westfalen",
+            "value" : "Nordrhein"
+          }, {
+            "label" : "Rheinland-Pfalz",
+            "value" : "Rheinland"
+          }, {
+            "label" : "Sachsen-Anhalt",
+            "value" : "Anhalt"
+          }, {
+            "label" : "Saarland Sachsen",
+            "value" : "Saarland"
+          }, {
+            "label" : "Schleswig-Holstein",
+            "value" : "Schleswig"
+          }, {
+            "label" : "Thüringen",
+            "value" : "Thuringen"
+          } ],
           "dynamicItemsLabel" : "#{item.officialName}",
-          "label" : "Federal State",
+          "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/FederalState')}",
           "value" : "#{data.data.federalState}"
         }
       }, {
@@ -92,13 +134,12 @@
         "type" : "Layout",
         "config" : {
           "id" : "action-button",
-          "visible" : "#{data.isReadOnly ne true}",
           "components" : [ {
             "cid" : "button11",
             "type" : "Button",
             "config" : {
               "id" : "cancel",
-              "name" : "Cancel#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/DynamicUI/Cancel')}",
+              "name" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/axon/ivy/form/editor/demo/DynamicUI/Cancel')}",
               "action" : "void()"
             }
           }, {
