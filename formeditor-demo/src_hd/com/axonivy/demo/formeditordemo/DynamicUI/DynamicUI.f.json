@@ -16,7 +16,7 @@
             "config" : {
               "id" : "first-name",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "First Name",
+              "label" : "#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/FirstName')}",
               "value" : "#{data.data.firstName}"
             }
           }, {
@@ -25,7 +25,7 @@
             "config" : {
               "id" : "last-name",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Last Name",
+              "label" : "Last Name#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/LastName')}",
               "value" : "#{data.data.lastName}"
             }
           }, {
@@ -34,7 +34,7 @@
             "config" : {
               "id" : "email",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Email",
+              "label" : "Email#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/Email')}",
               "value" : "#{data.data.eMail}",
               "type" : "EMAIL"
             }
@@ -44,7 +44,7 @@
             "config" : {
               "id" : "date-of-birth",
               "disabled" : "#{data.isReadOnly}",
-              "label" : "Date of Birth",
+              "label" : "Date of Birth#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/DateOfBirth')}",
               "value" : "#{data.data.dateOfBirth}"
             }
           } ]
@@ -72,7 +72,7 @@
             "label" : "Vietnam",
             "value" : "Vietnam"
           } ],
-          "label" : "Country",
+          "label" : "Country#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/Country')}",
           "value" : "#{data.data.country}"
         }
       }, {
@@ -82,9 +82,51 @@
           "id" : "federal-state",
           "visible" : "#{data.data.country eq 'Germany'}",
           "disabled" : "#{data.isReadOnly}",
-          "dynamicItemsList" : "#{data.states}",
+          "staticItems" : [ {
+            "label" : "Baden-Württemberg",
+            "value" : "Baden"
+          }, {
+            "label" : "Bayern",
+            "value" : "Bayern"
+          }, {
+            "label" : "Berlin",
+            "value" : "Berlin"
+          }, {
+            "label" : "Brandenburg",
+            "value" : "Brandenburg"
+          }, {
+            "label" : "Hamburg",
+            "value" : "Hamburg"
+          }, {
+            "label" : "Hessen",
+            "value" : "Hessen"
+          }, {
+            "label" : "Mecklenburg-Vorpommern",
+            "value" : "Mecklenburg"
+          }, {
+            "label" : "Niedersachsen",
+            "value" : "Niedersachsen"
+          }, {
+            "label" : "Nordrhein-Westfalen",
+            "value" : "Nordrhein"
+          }, {
+            "label" : "Rheinland-Pfalz",
+            "value" : "Rheinland"
+          }, {
+            "label" : "Sachsen-Anhalt",
+            "value" : "Anhalt"
+          }, {
+            "label" : "Saarland Sachsen",
+            "value" : "Saarland"
+          }, {
+            "label" : "Schleswig-Holstein",
+            "value" : "Schleswig"
+          }, {
+            "label" : "Thüringen",
+            "value" : "Thuringen"
+          } ],
           "dynamicItemsLabel" : "#{item.officialName}",
-          "label" : "Federal State",
+          "label" : "Federal State#{ivy.cms.co('/Dialogs/com/axonivy/demo/formeditordemo/DynamicUI/FederalState')}",
           "value" : "#{data.data.federalState}"
         }
       }, {
