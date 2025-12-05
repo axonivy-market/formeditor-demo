@@ -20,7 +20,8 @@
       <groupId>com.axonivy.ivy.api</groupId>
       <artifactId>ivy-api</artifactId>
     </dependency>
-    <dependencyManagement>
+  </dependencies>
+  <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.primefaces</groupId>
@@ -29,7 +30,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  </dependencies>
   <repositories>
     <repository>
       <snapshots>
