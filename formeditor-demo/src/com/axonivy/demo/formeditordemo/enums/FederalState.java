@@ -1,4 +1,4 @@
-package com.axonivy.demo.axon.ivy.form.editor.demo.enums;
+package com.axonivy.demo.formeditordemo.enums;
 
 public enum FederalState {
   BADEN("Baden-Württemberg"), BAYERN("Bayern"), BERLIN("Berlin"), BRANDENBURG("Brandenburg"), HAMBURG("Hamburg"), HESSEN("Hessen"),

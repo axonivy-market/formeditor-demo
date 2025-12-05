@@ -1,4 +1,4 @@
-package com.axonivy.demo.axon.ivy.form.editor.demo.enums;
+package com.axonivy.demo.formeditordemo.enums;
 
 public enum Country {
   VIETNAM("Vietnam"), GERMANY("Germany"), THAILAND("Thailand"), CAMBODIA("Cambodia"), MALAYSIA("Malaysia"), MOZAMBIQUE(

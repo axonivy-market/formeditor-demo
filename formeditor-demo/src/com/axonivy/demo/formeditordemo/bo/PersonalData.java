@@ -1,9 +1,9 @@
-package com.axonivy.demo.axon.ivy.form.editor.demo.bo;
+package com.axonivy.demo.formeditordemo.bo;
 
 
 import java.util.Date;
 
-import com.axonivy.demo.axon.ivy.form.editor.demo.enums.FederalState;
+import com.axonivy.demo.formeditordemo.enums.FederalState;
 
 public class PersonalData {
   private String firstName;
